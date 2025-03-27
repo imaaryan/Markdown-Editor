@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MDEditor - Markdown Previewer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="toolbar">
+        <div class="app-title">
+          <i class="ri-file-edit-line"></i>
+          MDEditor
+        </div>
+        <button class="theme-toggle" aria-label="Toggle Theme">
+          <i class="ri-moon-fill"></i>
+        </button>
+      </div>
+
+      <div class="editor-container">
+        <div class="editor-section">
+          <div class="section-header">
+            <span>Editor</span>
+            <button id="reset">Reset</button>
+          </div>
+          <div class="editor-content">
+            <textarea
+              id="input"
+              placeholder="Write your Markdown here..."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="preview-section">
+          <div class="section-header">
+            <span>Preview</span>
+          </div>
+          <div class="preview-content" id="viewer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
