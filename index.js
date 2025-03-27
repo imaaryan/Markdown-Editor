@@ -16,6 +16,33 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
+ input.value = `# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+This is **bold** text and this is *italic* text.
+
+Here is a of [SwingUI](http://swingui.com).
+
+## Lists
+
+### Unordered List:
+- Item 1
+- Item 2
+
+
+### Ordered List:
+1. First item
+2. Second item
+
+## Code
+\`\`\`
+console.log("Hello! SwingUI")
+\`\`\`
+`;
+
 // function form markdown converstion
 function convertMarkdown() {
   preview.innerHTML = marked.parse(input.value);
