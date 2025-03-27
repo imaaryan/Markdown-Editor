@@ -6,7 +6,7 @@
   --text-primary: #2c3e50;
   --text-secondary: #34495e;
   --border-color: #9d9d9d;
-  --code-bg: #f6f8fa;
+  --code-bg: #161b22;
   --icon-color: #333;
   --toolbar-bg: #f8f9fa;
 }
@@ -17,7 +17,7 @@
   --text-primary: #c9d1d9;
   --text-secondary: #8b949e;
   --border-color: #30363d;
-  --code-bg: #161b22;
+  --code-bg: #f6f8fa;
   --icon-color: #c9d1d9;
   --toolbar-bg: #161b22;
 }
@@ -154,9 +154,10 @@ h5 {
 }
 
 .preview-content p {
- margin: 0.5em 0em;
+  margin: 0.5em 0em;
 }
 .preview-content code {
+  color: var(--bg-primary);
   background-color: var(--code-bg);
   margin: 1em 0em;
   padding: 0.2em 0.4em;
