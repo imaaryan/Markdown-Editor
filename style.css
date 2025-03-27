@@ -141,21 +141,31 @@ body {
   color: var(--text-secondary);
 }
 
-.preview-content h1 {
+.preview-content h1,
+h2,
+h3,
+h4,
+h5 {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.3em;
+  margin: 1em 0em;
   font-size: 2em;
   color: var(--text-primary);
 }
 
+.preview-content p {
+ margin: 0.5em 0em;
+}
 .preview-content code {
   background-color: var(--code-bg);
+  margin: 1em 0em;
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
 
 .preview-content pre {
   background-color: var(--code-bg);
+  margin: 1em 0em;
   padding: 16px;
   border-radius: 3px;
   overflow-x: auto;
